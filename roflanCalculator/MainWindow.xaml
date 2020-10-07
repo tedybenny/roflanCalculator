@@ -24,7 +24,7 @@
             <Button Click="GetSim">Процент</Button>
             <Button Click="GetSim">Деление</Button>
             <Button Click="GetSim">Корень</Button>
-          <Button Click="GetSim">Степень</Button>
+            <Button Click="GetSim">Степень</Button>
             <Button Background ="LimeGreen" Click ="Calculate">Посчитать</Button>
         </StackPanel>
         <StackPanel Grid.Column="1" Height="419" VerticalAlignment="Bottom">
