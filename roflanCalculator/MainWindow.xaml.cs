@@ -34,10 +34,13 @@ namespace roflanCalculator
 
         private void Calculate(object sender, RoutedEventArgs e)
         {
+            int num1 = 0;
+            int num2 = 0;
             if (textBox1.Text != "" && textBox2.Text != "")
             {
-                int num1 = Convert.ToInt32(textBox1.Text);
-                int num2 = Convert.ToInt32(textBox2.Text);
+
+                num1 = Convert.ToInt32(textBox1.Text);
+                num2 = Convert.ToInt32(textBox2.Text);
                 switch (symbol)
                 {
                     case "Сумма":
@@ -61,6 +64,41 @@ namespace roflanCalculator
                     case "Степень":
                         Result.Text = Convert.ToString(cl.Pow(num1, num2));
                         break;
+                    case "Sin":
+                        Result.Text = Convert.ToString(cl.Sin(num1));
+                        break;
+                    case "Cos":
+                        Result.Text = Convert.ToString(cl.Cos(num1));
+                        break;
+                    case "Tan":
+                        Result.Text = Convert.ToString(cl.Tan(num1));
+                        break;
+                    case "Cot":
+                        Result.Text = Convert.ToString(cl.Cot(num1));
+                        break;
+                    case "Sec":
+                        Result.Text = Convert.ToString(cl.Sec(num1));
+                        break;
+                    case "Csc":
+                        Result.Text = Convert.ToString(cl.Csc(num1));
+                        break;
+                    case "Ln":
+                        Result.Text = Convert.ToString(cl.Ln(num1));
+                        break;
+                    case "Lg":
+                        Result.Text = Convert.ToString(cl.Lg(num1));
+                        break;
+                    case "Factorial":
+                        Result.Text = Convert.ToString(cl.Factorial(num1));
+                        break;
+                    case "Abs":
+                        Result.Text = Convert.ToString(cl.Abs(num1));
+                        break;
+                    case "x2":
+                        Result.Text = Convert.ToString(cl.x2(num1));
+                        break;
+
+
                 }
             }
             else

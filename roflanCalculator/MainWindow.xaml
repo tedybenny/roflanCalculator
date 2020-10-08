@@ -14,9 +14,9 @@
         </Grid.ColumnDefinitions>
         <StackPanel >
             <Label>Первое число</Label>
-            <TextBox x:Name="textBox1"  Height="50" Text="{Binding Path = First}"></TextBox>
+            <TextBox x:Name="textBox1"  Height="50" Text="0"></TextBox>
             <Label>Второе число</Label>
-            <TextBox x:Name="textBox2" Height="50" Text="{Binding Path = First}"></TextBox>
+            <TextBox x:Name="textBox2" Height="50" Text="0"></TextBox>
             <TextBlock x:Name="Result" Height="50" Margin="0 30 0 0"></TextBlock>
             <Button Click="GetSim">Сумма</Button>
             <Button Click="GetSim">Вычитание</Button>
@@ -27,7 +27,31 @@
             <Button Click="GetSim">Степень</Button>
             <Button Background ="LimeGreen" Click ="Calculate">Посчитать</Button>
         </StackPanel>
-        <StackPanel Grid.Column="1" Height="419" VerticalAlignment="Bottom">
+        <StackPanel Grid.Column="1" VerticalAlignment="Top">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Vertical" VerticalAlignment="Top">
+                <TextBlock HorizontalAlignment="Center" FontSize="15">Тригонометрия</TextBlock>
+                <Button Click="GetSim">Sin</Button>
+                <Button Click="GetSim">Cos</Button>
+                <Button Click="GetSim">Tan</Button>
+                <Button Click="GetSim">Cot</Button>
+                <Button Click="GetSim">Sec</Button>
+                <Button Click="GetSim">Csc</Button>
+                <TextBlock TextWrapping="Wrap">Для работы с одним числом (первым)</TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Column="1" VerticalAlignment="Top">
+                <Button Click="GetSim">Ln</Button>
+                <Button Click="GetSim">Lg</Button>
+                <Button Click="GetSim">Factorial</Button>
+                <Button Click="GetSim">Abs</Button>
+                <Button Click="GetSim">x2</Button>
+                </StackPanel>
+            </Grid>
         </StackPanel>
     </Grid>
 </Window>

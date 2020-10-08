@@ -43,6 +43,56 @@ namespace roflanCalculator
         {
             return (Math.Pow(a, b));
         }
+        public double Sin(double a)
+        {
+            return (Math.Sin(a));
+        }
+        public double Cos(double a)
+        {
+            return (Math.Cos(a));
+        }
+        public double Tan(double a)
+        {
+            return (Math.Tan(a));
+        }
+        public double Cot(double a)
+        {
+            return (1 / Math.Tan(a));
+        }
+        public double Sec(double a)
+        {
+            return (1 / Math.Cos(a));
+        }
+        public double Csc(double a)
+        {
+            return (1 / Math.Sin(a));
+        }
+        public double Ln(double a)
+        {
+            return (Math.Log(a,Math.E));
+        }
+        public double Lg(double a)
+        {
+            return (Math.Log(a,10));
+        }
+        public double Factorial(double a)
+        {
+            int factorial = 1;
+            for (int i = 1; i <= a; i++)
+            {
+                factorial *= i;
+            }
+
+            return factorial;
+        }
+        public double Abs(double a)
+        {
+            return (Math.Abs(a));
+        }
+        public double x2(double a)
+        {
+            return (Math.Pow(a,2));
+        }
 
     }
 }
